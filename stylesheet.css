@@ -33,10 +33,19 @@ div{
 }
 
 /*Styling of heading*/
-.heading h3{
-  background-color: hsl(47, 88%, 63%);
-  padding: 10px;
+.heading img{
   border-radius: 10px;
+}
+
+.heading h4{
+  background-color: hsl(47, 88%, 63%);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.heading p{
+  color: hsl(0, 0%, 7%);
+  
 }
 
 /*Styling of author*/
@@ -60,14 +69,12 @@ div{
     background-color: hsl(0, 0%, 100%);
     border: 1px solid black;
     border-radius: 20px;
+    box-shadow: 10px 10px;
+
     max-width: 20rem;
     width: 100rem;
 
-    
-
     padding: 20px;
-
-    border-radius: 10px;
 }
 
 
