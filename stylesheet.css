@@ -14,7 +14,46 @@ body{
 
     font-family: "Figtree", sans-serif;
     font-weight: 500;
+    
+    color: hsl(0, 0%, 7%)
 }
+
+p{
+  font-size: 1rem;
+  color: hsl(0, 0%, 42%);
+}
+
+/*Styling of each content*/
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:1rem;
+  padding-bottom: 10px;
+}
+
+/*Styling of heading*/
+.heading h3{
+  background-color: hsl(47, 88%, 63%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*Styling of author*/
+.author{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+.author img{
+  width: 10%;
+}
+
+.author h4{
+  align-self:center
+}
+
 
 /*Styling of card*/
 .card{
@@ -24,7 +63,11 @@ body{
     max-width: 20rem;
     width: 100rem;
 
+    
+
     padding: 20px;
+
+    border-radius: 10px;
 }
 
 
