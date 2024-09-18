@@ -6,7 +6,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +13,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,85 +23,99 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/yMeeraki/blog-preview-card)
+- Live Site URL: [Netlify](https://blogpreviewfem.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- CSS Flexbox
 - CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Throughout this project, I learned several valuable lessons that helped me improve my understanding of HTML, CSS, and responsive design principles.
 
-To see how you can add code snippets, see below:
+1. **Semantic HTML**: Using clear and meaningful HTML tags improves both the structure and accessibility of a webpage. For example, I structured the content into proper sections like `<main>`, `<section>`, and `<footer>` to ensure readability.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main class="card">
+  <section>
+    <div class="heading">
+      <img src="./assets/images/illustration-article.svg" alt="illustration-article">
+      <h4>Learning</h4>
+      <p>Published 21 Dec 2023</p>
+    </div>
+  </section>
+</main>
 ```
+
+2. **CSS Hover and Focus States**: I learned how to apply hover and focus states to interactive elements like buttons and cards to provide visual feedback to users, enhancing the user experience.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card:hover, .card:focus {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+3. **Flexbox for Layout**: I deepened my understanding of using Flexbox for layout control. I applied Flexbox to align content properly within the card and ensure consistent spacing across different sections.
+
+```css
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+4. **Mobile-First Design**: I focused on building the layout with a mobile-first approach, which ensured the design looks great on smaller screens before scaling up for larger viewports.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I plan to continue focusing on the following areas:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+1. **Responsive Design**: I aim to improve my understanding of how to make websites look good on a variety of devices and screen sizes. I want to refine my use of media queries and grid/flexbox layouts for better adaptability.
+
+2. **Accessibility**: Ensuring that websites are accessible to users with different needs is crucial. I plan to focus more on using ARIA labels, improving keyboard navigation, and testing screen reader compatibility.
+
+3. **Advanced CSS Techniques**: I want to explore advanced CSS techniques like animations, transitions, and CSS variables to make my projects more dynamic and engaging.
+
+4. **JavaScript Interactivity**: As I grow more comfortable with HTML and CSS, I aim to incorporate more JavaScript to enhance interactivity, such as creating modals, sliders, and form validation.
+
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Tricks - Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This guide was instrumental in understanding how to use Flexbox effectively for layout design. It provided clear examples and explanations that helped me implement Flexbox in this project.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - The MDN documentation on CSS Grid Layout was a valuable resource for understanding grid-based layouts. It offered comprehensive details and use cases that were helpful for structuring the content.
+
+- [A11Y Project - Accessibility Checklist](https://a11yproject.com/checklist/) - This checklist was useful for ensuring that my project is accessible. It covers essential accessibility considerations and helped me identify areas for improvement.
+
+- [Google Fonts - Figtree](https://fonts.google.com/specimen/Figtree) - The Google Fonts page for Figtree provided information on how to properly include the font in my project and how to use various font weights effectively.
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Yukti Gupta](https://www.linkedin.com/in/yukti-gupta-589974195/)
+- Frontend Mentor - [@yMeeraki](https://www.frontendmentor.io/profile/yMeeraki)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
