@@ -77,6 +77,12 @@ div{
     padding: 20px;
 }
 
+/* Add hover and focus effect to the card */
+.card:hover, .card:focus {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
 
 
 /*CSS Reset*/
